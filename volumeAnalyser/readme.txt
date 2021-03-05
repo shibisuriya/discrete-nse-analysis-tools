@@ -12,3 +12,12 @@ the date range the better.
 -> Since the ISIN of the stocks are also written into report.csv from the bhavcopy, it is very easy to import this list to a charting platform such
 as tradingview or investing.com.
 
+-> The report.csv present in this folder was created on 05-mar-2021 using 12 months historic data.
+
+-> I used libreoffice calc to filter out some stocks which have `Average no. of trades` > 22,500 (as on 05-mar-2021) i.e., on an average more than 1 trade 
+gets executed every second of the trading day (in the past 12 months i.e., from 05-mar-2020 to 05-mar-2021) in these scrips. Similarly filters of user's choice
+can be applied to the columns of this .csv file (report.csv).
+According to the analysis (as on 05-mar-2021) there are about 1,546 stocks listed in NSE of which only 171 stocks are listed before
+365 days (i.e., before 05-mar-2020), have `Average number of trade` > 22500 and `Average volume` >= 22500. It is a good idea to trade
+on only these 170 stocks since other stocks have insufficient daily OHLC data to perform reliable technical analysis on or they have
+low liquidity. Refer ./liquidStocks.csv. 
